@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="icon" href="img/wi-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>DE | DweeExercise</title>
+  </head>
+  <body
+    style="background-color: #0a0a0a"
+    class="w3-text-white w3-animate-opacity"
+  >
+    <!-- Start Banner -->
+    <div id="banner">
+      <img src="img/banner-dwee.png" alt="" width="100%" />
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start Navbar -->
+    <div
+      class="w3-card-4 w3-bar w3-padding-16 w3-text-white"
+      style="background-color: #0a0a0a"
+    >
+      <button
+        class="w3-bar-item w3-button w3-round-large"
+        style="font-weight: 600"
+        onclick="openMenu('Home')"
+      >
+        <i class="fa-solid fa-house"></i> Home
+      </button>
+      <button
+        class="w3-bar-item w3-button w3-round-large"
+        style="font-weight: 600"
+        onclick="openMenu('Profile')"
+      >
+        <i class="fa-solid fa-user"></i> Profile
+      </button>
+      <button
+        class="w3-bar-item w3-button w3-round-large"
+        style="font-weight: 600"
+        onclick="openMenu('Schedule')"
+      >
+        <i class="fas fa-calendar-alt"></i> Schedule
+      </button>
+
+      <div class="w3-dropdown-hover">
+        <button class="w3-button w3-round-large" style="font-weight: 600">
+          <i class="fas fa-dumbbell"></i> Exercise
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-round-large">
+          <button
+            class="w3-button w3-bar-item w3-round-large"
+            style="font-weight: 600"
+            onclick="openMenu('Push')"
+          >
+            Push Day
+          </button>
+          <button
+            class="w3-button w3-bar-item w3-round-large"
+            style="font-weight: 600"
+            onclick="openMenu('Pull')"
+          >
+            Pull Day
+          </button>
+          <button
+            class="w3-button w3-bar-item w3-round-large"
+            style="font-weight: 600"
+            onclick="openMenu('Legs')"
+          >
+            Leg Day
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Home -->
+    <div id="Home" class="w3-card-2 menu w3-animate-zoom" style="display: none">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size: 50px">Hi, I'm Dwi Putra Juniargi</h1>
+          <h5>
+            I am very interested in body building. Here, I will share my
+            schedule and what exercises I do when working out at the gym.
+          </h5>
+        </div>
+      </div>
+    </div>
+    <!-- End Home -->
+
+    <!-- Start Profile -->
+    <div
+      id="Profile"
+      class="w3-container menu"
+      style="display: none; background-color: #161616"
+    >
+      <img
+        src="img/back.jpeg"
+        class="w3-animate-left"
+        alt=""
+        style="
+          height: 608px;
+          width: 338px;
+          float: left;
+          border-radius: 3%;
+          margin-bottom: 20px;
+          margin-top: 20px;
+        "
+      />
+      <h1 style="font-size: 30px; margin-left: 350px" class="w3-animate-top">
+        <u>About Me</u>
+      </h1>
+      <h5 style="margin-left: 350px" class="w3-animate-right">
+        NIM : 10123132 <br />
+        Name : Dwi Putra Juniargi <br />
+        Class : IF-4/S1/I
+      </h5>
+      <p style="margin-left: 350px" class="w3-animate-left">
+        I am the second child of three brothers. My father is from Bengkulu,
+        while my mother is from Bandung. <br />My hobbies are exercising, such
+        as swimming, weightlifting, and running. <br />
+        I am studying at Universitas Komputer Indonesia and currently in my
+        first year.
+        <br />
+        <br />
+        I started exercising in December 2022, and in that month I only ran once
+        a week. In March 2023, <br />
+        I started trying home workouts and combined them with the “One meal a
+        day” program, <br />
+        which caused my body weight to drop drastically from 80kg to 71kg.
+      </p>
+      <p style="margin-left: 350px" class="w3-animate-right">
+        In July 2023, it was the first time I tried a gym membership. I was
+        confused because I didn’t know <br />
+        what exercises to do there. Then I started learning and searching for
+        information about bodybuilding. <br />
+        I learned a lot about proper form, nutrition, and how the body works.
+      </p>
+      <p style="margin-left: 350px" class="w3-animate-bottom">
+        After the membership ended, I didn’t renew it because I felt that the
+        gym wasn’t worth the price. <br />
+        Then I thought about doing home workouts, but it turned out to be
+        difficult to be consistent, <br />
+        so I wasn’t consistent for 4 months. Until November 17, 2023, I decided
+        to return to my routine because I wanted to have a nice body. I got a
+        gym membership at a different place than before, namely Ksatria Gym.
+        <br />
+        Here, I started a new adventure again because I have been consistent for
+        more than 2 months and have been trying to meet my daily protein intake.
+      </p>
+    </div>
+    <!-- End Profile -->
+
+    <!-- Start Schedule -->
+    <div
+      id="Schedule"
+      class="w3-container menu"
+      style="display: none; background-color: #161616"
+    >
+      <center>
+        <h1 style="font-size: 30px" class="w3-animate-top">
+          <u>
+            <i class="fas fa-dumbbell"></i> Jadwal Saya
+            <i class="fas fa-dumbbell"></i>
+          </u>
+        </h1>
+        <table
+          border="3"
+          class="w3-animate-bottom"
+          style="
+            width: 25%;
+            border-collapse: collapse;
+            border-radius: 3;
+            border-color: white;
+          "
+        >
+          <tr>
+            <td><b>Senin</b></td>
+            <td><b>Push Day</b></td>
+          </tr>
+          <tr>
+            <td><b>Selasa</b></td>
+            <td><b>Pull Day</b></td>
+          </tr>
+          <tr>
+            <td><b>Rabu</b></td>
+            <td><b>Leg Day</b></td>
+          </tr>
+          <tr>
+            <td><b>Kamis</b></td>
+            <td><b>Push Day</b></td>
+          </tr>
+          <tr>
+            <td><b>Jumat</b></td>
+            <td><b>Pull Day</b></td>
+          </tr>
+          <tr>
+            <td><b>Sabtu</b></td>
+            <td><b>Cardio</b></td>
+          </tr>
+          <tr>
+            <td><b>Minggu</b></td>
+            <td><b>Rest</b></td>
+          </tr>
+        </table>
+      </center>
+      <h4 class="w3-animate-left">Indonesia :</h4>
+      <p class="w3-animate-top">
+        Saya melakukan split workout PPL (Push, Pull, Legs) karena program ini
+        memungkinkan saya untuk fokus pada kelompok otot tertentu pada setiap
+        sesi latihan. Dengan membagi latihan ke dalam tiga kelompok otot yang
+        berbeda, yaitu push (seperti bench press), pull (seperti pull-up), dan
+        legs (seperti squat), saya dapat memastikan bahwa saya memberikan
+        stimulus yang cukup pada setiap kelompok otot. Selain itu, program ini
+        juga memungkinkan waktu pemulihan yang lebih baik karena kelompok otot
+        yang berbeda digunakan pada setiap sesi latihan. Hal ini dapat membantu
+        mencegah cedera dan mempercepat pemulihan. Terakhir, program ini juga
+        memungkinkan fleksibilitas dalam merancang jadwal latihan, sehingga
+        dapat disesuaikan dengan kebutuhan dan jadwal masing-masing orang.
+      </p>
+      <h4 class="w3-animate-left"><i>English :</i></h4>
+      <p class="w3-animate-top">
+        <i>
+          I do split workout PPL (Push, Pull, Legs) because this program allows
+          me to focus on specific muscle groups in each workout session. By
+          dividing the workout into three different muscle groups, namely push
+          (such as bench press), pull (such as pull-up), and legs (such as
+          squat), I can ensure that I provide sufficient stimulus to each muscle
+          group. In addition, this program also allows for better recovery time
+          because different muscle groups are used in each workout session. This
+          can help prevent injury and speed up recovery. Finally, this program
+          also allows for flexibility in designing a workout schedule, so it can
+          be tailored to the needs and schedules of each individual.
+        </i>
+      </p>
+    </div>
+    <!-- End Schedule -->
+
+    <!-- Start Push Day -->
+    <div
+      id="Push"
+      class="w3-container menu"
+      style="display: none; background-color: #161616"
+    >
+      <center>
+        <h1 style="font-size: 30px" class="w3-animate-top">
+          <u>
+            <i class="fas fa-dumbbell"></i> Push Day
+            <i class="fas fa-dumbbell"></i>
+          </u>
+        </h1>
+        <table
+          border="3"
+          class="w3-animate-bottom"
+          style="
+            width: 25%;
+            border-collapse: collapse;
+            border-radius: 3;
+            border-color: white;
+          "
+        >
+          <tr>
+            <th>Gerakan</th>
+            <th>Sets/Reps</th>
+          </tr>
+          <tr>
+            <td><b>Dumbell Incline Press</b></td>
+            <td><b>3 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>Chest Press Machine</b></td>
+            <td><b>3 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>Cable Chest Fly</b></td>
+            <td><b>3 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>Shoulder Press</b></td>
+            <td><b>3 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>Front Raises</b></td>
+            <td><b>2 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>Lateral Raises</b></td>
+            <td><b>4 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>Triceps Push Down</b></td>
+            <td><b>3 sets of failure</b></td>
+          </tr>
+        </table>
+      </center>
+      <h4 class="w3-animate-top">Indonesia :</h4>
+      <p class="w3-animate-left">
+        Pada push day, fokus latihan adalah pada kelompok otot yang terlibat
+        dalam gerakan mendorong, seperti pectoralis(otot dada), <br />
+        deltoid(otot bahu depan dan samping), dan triceps.
+      </p>
+      <h4 class="w3-animate-top"><i>English :</i></h4>
+      <p class="w3-animate-left">
+        <i>
+          On push day, the focus of the workout is on the muscle groups used in
+          pushing movements, such as the pectoralis(chest), <br />
+          deltoid(front and side delt), and triceps
+        </i>
+      </p>
+    </div>
+    <!-- End Push Day -->
+
+    <!-- Start Pull Day -->
+    <div
+      id="Pull"
+      class="w3-container menu"
+      style="display: none; background-color: #161616"
+    >
+      <center>
+        <h1 style="font-size: 30px" class="w3-animate-top">
+          <u>
+            <i class="fas fa-dumbbell"></i> Pull Day
+            <i class="fas fa-dumbbell"></i>
+          </u>
+        </h1>
+        <table
+          border="3"
+          class="w3-animate-bottom"
+          style="
+            width: 25%;
+            border-collapse: collapse;
+            border-radius: 3;
+            border-color: white;
+          "
+        >
+          <tr>
+            <th>Gerakan</th>
+            <th>Sets/Reps</th>
+          </tr>
+          <tr>
+            <td><b>Lat Pull Down</b></td>
+            <td><b>3 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>V-Bar Pull Down</b></td>
+            <td><b>3 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>Barbell T-Bar Row</b></td>
+            <td><b>3 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>Barbell Shrugs</b></td>
+            <td><b>4 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>Rope Face Pull</b></td>
+            <td><b>4 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>Barbell Curls</b></td>
+            <td><b>3 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>Reverse Grip Barbell Curls</b></td>
+            <td><b>3 sets of failure</b></td>
+          </tr>
+        </table>
+      </center>
+      <h4 class="w3-animate-right">Indonesia :</h4>
+      <p class="w3-animate-bottom">
+        Pada pull day, fokus latihan adalah pada kelompok otot yang terlibat
+        dalam gerakan menarik, seperti latissimus dorsi(otot sayap), <br />
+        trapezius(otot pundak), forearm, dan biceps.
+      </p>
+      <h4 class="w3-animate-bottom"><i>English :</i></h4>
+      <p class="w3-animate-right">
+        <i>
+          On pull day, the focus of the workout is on the muscle groups involved
+          in pulling movements, such as the latissimus dorsi, <br />trapezius,
+          forearm, and biceps.
+        </i>
+      </p>
+    </div>
+    <!-- End Pull Day -->
+
+    <!-- Start Leg Day -->
+    <div
+      id="Legs"
+      class="w3-container menu w3-animate-zoom"
+      style="display: none; background-color: #161616"
+    >
+      <center>
+        <h1 style="font-size: 30px">
+          <u>
+            <i class="fas fa-dumbbell"></i> Leg Day
+            <i class="fas fa-dumbbell"></i>
+          </u>
+        </h1>
+        <table
+          border="3"
+          style="
+            width: 25%;
+            border-collapse: collapse;
+            border-radius: 3;
+            border-color: white;
+          "
+        >
+          <tr>
+            <th>Gerakan</th>
+            <th>Sets/Reps</th>
+          </tr>
+          <tr>
+            <td><b>Barbell Squat</b></td>
+            <td><b>4 sets of 12 reps</b></td>
+          </tr>
+          <tr>
+            <td><b>Deadlift</b></td>
+            <td><b>3 sets of 12 reps</b></td>
+          </tr>
+          <tr>
+            <td><b>Leg Press</b></td>
+            <td><b>4 sets of 15</b></td>
+          </tr>
+          <tr>
+            <td><b>Leg Curls</b></td>
+            <td><b>4 sets of failure</b></td>
+          </tr>
+          <tr>
+            <td><b>Calf Raises</b></td>
+            <td><b>4 sets of failure</b></td>
+          </tr>
+        </table>
+      </center>
+      <h4>Indonesia :</h4>
+      <p>
+        Pada leg day, fokus latihan adalah pada kelompok otot yang terlibat
+        dalam gerakan kaki, seperti quadriceps, hamstrings, glutes, dan calves.
+        Contohnya :
+        <br />
+        - Squat: Latihan ini melibatkan quadriceps, hamstrings, dan glutes.
+        <br />
+        - Deadlift: Latihan ini melibatkan hamstrings, glutes, dan lower back.
+        <br />
+        - Leg press: Latihan ini melibatkan quadriceps, hamstrings, dan glutes.
+        <br />
+        - Leg curl: Latihan ini melibatkan hamstrings. Calf raise: Latihan ini
+        melibatkan calves.
+      </p>
+      <h4><i>English :</i></h4>
+      <p>
+        <i>
+          On leg day, the focus of the workout is on the muscle groups involved
+          in leg movements, such as the quadriceps, hamstrings, glutes, and
+          calves. <br />
+          Some examples of exercises that can be done on leg day include:
+          <br />
+          - Squat: This exercise involves the quadriceps, hamstrings, and
+          glutes.
+          <br />
+          - Deadlift: This exercise involves the hamstrings, glutes, and lower
+          back. <br />
+          - Leg press: This exercise involves the quadriceps, hamstrings, and
+          glutes. <br />
+          - Leg curl: This exercise involves the hamstrings. <br />
+          - Calf raise: This exercise involves the calves.
+        </i>
+      </p>
+    </div>
+    <!-- End Leg Day -->
+
+    <!-- Start Footer -->
+    <div class="w3-card-4 footer" style="background-color: #0a0a0a">
+      <div class="w3-container">
+        <p>Press menu in the navbar to continue...</p>
+        <hr />
+        <center>
+          <p>
+            <i class="far fa-copyright"></i> 2024 Dwi Putra Juniargi |
+            <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/agii_____/" target="_blank"
+              >agii_____</a
+            >
+            |
+            <i class="fab fa-facebook"></i>
+            <a href="https://www.facebook.com/dwi.p.juniargi/" target="_blank"
+              >Dwi Putra Juniargi</a
+            >
+          </p>
+        </center>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <script>
+      function openMenu(namamenu) {
+        var i;
+        var x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(namamenu).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
